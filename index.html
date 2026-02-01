@@ -3,10 +3,200 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio | Ingeniero Multimedia</title>
+    <title>Portafolio - Ingeniero Multimedia</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>HOLA MUNDO</h1>
+    <header>
+        <nav>
+            <div class="logo">Luis Carlos Lozano Giraldo-Portafolio</div>
+            <ul class="nav-links">
+                <li><a href="#sobre-mi">Sobre Mí</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#educacion">Educación</a></li>
+                <li><a href="#skills">Skills</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sobre Mí -->
+    <section class="section" id="sobre-mi">
+        <h2>Sobre Mí</h2>
+        <p class="section-subtitle">Conoce un poco más sobre mí y lo que hago</p>
+        <div class="about-content">
+            <div class="about-text">
+                <p>
+                    Soy estudiante en ingenieria multimedia enfocado en el desarrollo de experiencias interactivas,
+                videojuegos y aplicaciones creativas. Actualmente trabajo en proyectos que combinan
+                programación, diseño y tecnologías emergentes como inteligencia artificial.
+                </p>
+                <p>
+                    Busco oportunidades para crecer profesionalmente, participar en proyectos innovadores
+                y aportar soluciones creativas con impacto real.
+                </p>
+            </div>
+            <div class="about-photo">
+                <img src="tu-foto.png" alt="Foto de perfil">
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section class="section" id="portafolio">
+        <h2>Portafolio</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="project-image"><img src="SafeRoute.png" style="width: 82%;"></img></div>
+                <div class="project-content">
+                    <h3>SafeRoute</h3>
+                    <p class="project-description">
+                        SafeRoute es una aplicación web que permite clasificar el estado de una calle 
+                        (Calle Buena, Grietas o Huecos) mediante una red neuronal CNN y detectar anomalías
+                        con un modelo YOLO. Además, extrae la ubicación GPS desde los metadatos EXIF de la
+                        fotografía y la muestra en un mapa interactivo con Leaflet.
+                    </p>
+                    <div class="project-tech">
+                        <h4>Tecnologías:</h4>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow, YOLOv8, OpenCV</span>
+                        <span class="tech-tag">HTML, CSS, JavaScript</span>
+                        <span class="tech-tag">Flask</span>
+                    </div>
+                    <a href="https://github.com/isalopeziba/proyecto_PDI?tab=readme-ov-file" class="github-link" target="_blank">
+                        <span>→</span> Ver en GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🕹️</div>
+                <div class="project-content">
+                    <h3>Login de un Banco</h3>
+                    <p class="project-description">
+                        Desarrollo del frontend de un sistema de autenticación bancaria,
+                        replicando la interfaz y experiencia de usuario del Banco de Occidente.
+                        El proyecto se enfocó en la maquetación responsiva, fidelidad visual al
+                        diseño original y buenas prácticas de usabilidad y seguridad en formularios.
+                    </p>
+                    <div class="project-tech">
+                        <h4>Tecnologías:</h4>
+                        <span class="tech-tag">HTML, CSS, JavaScript</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">XAMPP</span>
+                    </div>
+                    <a href="https://github.com/tu-usuario/proyecto2" class="github-link" target="_blank">
+                        <span>→</span> Ver en GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">💻</div>
+                <div class="project-content">
+                    <h3>BURN fIGHT</h3>
+                    <p class="project-description">
+                        Aplicación interactiva que combina elementos multimedia con 
+                        funcionalidades avanzadas para crear una experiencia única.
+                    </p>
+                    <div class="project-tech">
+                        <h4>Tecnologías:</h4>
+                        <span class="tech-tag">Unity</span>
+                        <span class="tech-tag">Photoshop,Illustrator,Canva</span>
+                        <span class="tech-tag">C#</span>
+                    </div>
+                    <a href="https://github.com/tu-usuario/proyecto3" class="github-link" target="_blank">
+                        <span>→</span> Ver en GitHub
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🎨</div>
+                <div class="project-content">
+                    <h3>Diorama</h3>
+                    <p class="project-description">
+                        Proyecto que explora nuevas formas de interacción, combinando 
+                        arte digital y tecnología para crear experiencias inmersivas.
+                    </p>
+                    <div class="project-tech">
+                        <h4>Tecnologías:</h4>
+                        <span class="tech-tag">Blender</span>
+                        <span class="tech-tag">Substance 3D</span>
+                    </div>
+                    <a href="https://github.com/tu-usuario/proyecto4" class="github-link" target="_blank">
+                        <span>→</span> Ver en GitHub
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Educación -->
+    <section class="section" id="educacion">
+        <h2>Educación</h2>
+        <p class="section-subtitle">Mi trayectoria académica</p>
+        
+        <div class="education-item">
+            <h3>Ingeniería Multimedia</h3>
+            <p class="education-institution">Universidad XYZ</p>
+            <p class="education-date">2018 - 2023</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Especialización en Desarrollo de Videojuegos</h3>
+            <p class="education-institution">Instituto ABC</p>
+            <p class="education-date">2023 - 2024</p>
+        </div>
+
+        <div class="education-item">
+            <h3>Certificación en Diseño Interactivo</h3>
+            <p class="education-institution">Plataforma Online</p>
+            <p class="education-date">2024</p>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+        <h2>Skills</h2>
+        <p class="section-subtitle">Tecnologías y herramientas que manejo</p>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Lenguajes de Programación</h3>
+                <div class="skill-item">C#</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Python</div>
+                <div class="skill-item">C++</div>
+                <div class="skill-item">HTML/CSS</div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Frameworks y Librerías</h3>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">Three.js</div>
+                <div class="skill-item">jQuery</div>
+                <div class="skill-item">Bootstrap</div>
+            </div>
+
+            <div class="skill-category">
+                <h3>Software y Herramientas</h3>
+                <div class="skill-item">Unity</div>
+                <div class="skill-item">Unreal Engine</div>
+                <div class="skill-item">Blender</div>
+                <div class="skill-item">Adobe Photoshop</div>
+                <div class="skill-item">Adobe Illustrator</div>
+                <div class="skill-item">Git/GitHub</div>
+                <div class="skill-item">VS Code</div>
+                <div class="skill-item">Figma</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Portafolio Ingeniero Multimedia. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
